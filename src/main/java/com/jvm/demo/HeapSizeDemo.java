@@ -12,7 +12,7 @@ public class HeapSizeDemo {
             list.add(b);
             if (list.size() == 10) {
                 list = new ArrayList();
-                Thread.sleep(1);
+                Thread.sleep(50);
             }
         }
     }

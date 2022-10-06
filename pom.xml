@@ -1,23 +1,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.jvm.demo</groupId>
-  <artifactId>JVM</artifactId>
-  <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>JVM Demo Project</name>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.jvm.demo</groupId>
+    <artifactId>JVM</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>JVM Demo Project</name>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+    <properties>
+        <java.version>11</java.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <encoding>UTF-8</encoding>
+    </properties>
 
-  <build>
-    <finalName>JVM</finalName>
-  </build>
+    <dependencies>
+        <dependency>
+            <groupId>com.sun.tools.btrace</groupId>
+            <artifactId>btrace-agent</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+    </dependencies>
 
 </project>
